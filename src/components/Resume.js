@@ -2,22 +2,37 @@ import React, { Component } from "react";
 import Personal from "./Personal";
 import Experience from "./Experience";
 import Education from "./Education";
-import Pdf from "react-to-pdf";
-const ref = React.createRef();
+import ReactToPrint from "react-to-print";
 
-class Resume extends Component {
+class ComponentToPrint extends Component {
   render() {
     return (
       <>
-        <div ref={ref}>
+        <div>
+          {/* usunac strictmode w index.js by nie miec bledu przy  drukowaniu */}
           {/* <Personal></Personal>
         <Experience></Experience> */}
           <Education></Education>
         </div>
-        <Pdf targetRef={ref} filename="post.pdf">
-          {({ toPdf }) => <button onClick={toPdf}>Generate PDF</button>}
-        </Pdf>
       </>
+    );
+  }
+}
+
+class Resume extends React.PureComponent {
+  render() {
+    return (
+      <div>
+        <ReactToPrint
+          trigger={() => {
+            // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop
+            // to the root node of the returned component as it will be overwritten.
+            return <a href="#">Print this out!</a>;
+          }}
+          content={() => this.componentRef}
+        />
+        <ComponentToPrint ref={(el) => (this.componentRef = el)} />
+      </div>
     );
   }
 }

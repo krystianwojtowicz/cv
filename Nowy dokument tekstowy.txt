@@ -1,1 +1,1 @@
-map w edu i exp, pdf spr strony
+map w edu i exp

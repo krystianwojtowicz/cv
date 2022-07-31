@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <>
         <Instructions></Instructions>
-        <Resume></Resume>
+        <Resume />
       </>
     );
   }
