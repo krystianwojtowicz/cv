@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+input {
+  border: 1px solid black;
+}
+.form {
+  visibility: hidden;
+  /* position: absolute; */
+}
+.form.visible {
+  visibility: visible;
+}
+.to-edit {
+  visibility: hidden;
+}
+#Personal:hover .to-edit {
+  visibility: visible;
+}
