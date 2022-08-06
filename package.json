@@ -17,6 +17,7 @@
     "react-to-print": "^2.14.7",
     "react-toastify": "^9.0.7",
     "stream": "npm:stream-browserify@^3.0.0",
+    "uniqid": "^5.4.0",
     "utli": "npm:util",
     "web-vitals": "^2.1.4",
     "zlib": "npm:browserify-zlib@^0.2.0"

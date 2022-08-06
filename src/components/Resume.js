@@ -11,9 +11,9 @@ class Resume extends Component {
       <>
         <div>
           {/* usunac strictmode w index.js by nie miec bledu przy  drukowaniu -to w startm pdfie co nie ma stopki*/}
-          <Personal></Personal>
-          {/* <Experience></Experience>
-          <Education></Education> */}
+          {/* <Personal></Personal> */}
+          {/* <Experience></Experience> */}
+          <Education></Education>
         </div>
       </>
     );
