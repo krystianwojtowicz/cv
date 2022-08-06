@@ -9,11 +9,14 @@ class Resume extends Component {
   render() {
     return (
       <>
-        <div>
+        <div id="resume">
+          <div id="personal"></div>
+          <div id="other">
+            <Education></Education>
+          </div>
           {/* usunac strictmode w index.js by nie miec bledu przy  drukowaniu -to w startm pdfie co nie ma stopki*/}
           {/* <Personal></Personal> */}
           {/* <Experience></Experience> */}
-          <Education></Education>
         </div>
       </>
     );

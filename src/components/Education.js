@@ -61,7 +61,7 @@ class Education extends Component {
       UniversityAndCity,
       field,
     };
-    console.log(education);
+
     this.setState((prevState) => ({
       dates: "",
       UniversityAndCity: "",

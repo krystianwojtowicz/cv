@@ -18,7 +18,14 @@ class App extends Component {
             )
           }
         </PDFDownloadLink>
-        <ResumeToPrint></ResumeToPrint>
+        {/* <ResumeToPrint></ResumeToPrint> */}
+
+        {/* <PDFDownloadLink document={<ResumeToPrint />} fileName="movielist.pdf">
+          {({ blob, url, loading, error }) =>
+            loading ? "Loading document..." : "Download Pdf"
+          }
+        </PDFDownloadLink> */}
+
         <Instructions></Instructions>
         <Resume />
       </>
@@ -27,3 +34,4 @@ class App extends Component {
 }
 
 export default App;
+// ReactPDF.render(<ResumeToPrint />, `/example.pdf`);
