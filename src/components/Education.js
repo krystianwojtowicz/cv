@@ -24,11 +24,14 @@ class Education extends Component {
     e.currentTarget.nextElementSibling.classList.add("visible");
   }
   render() {
-    const { fullName, phone } = this.state;
+    let { dates, UniversityAndCity, field } = this.state;
     return (
       <div id="Personal">
-        <h2>{fullName ? fullName : "Krystian"}</h2>
-        <h2>{phone ? phone : "999999999"}</h2>
+        <h2>{dates ? dates : "2011 - 2016"}</h2>
+        <h2>
+          {UniversityAndCity ? UniversityAndCity : "Politechnika Warszawska"}
+        </h2>
+        <h2>{field ? field : "elektrotechnika"}</h2>
         <button onClick={this.handleClick} className="to-edit">
           edit
         </button>
@@ -36,14 +39,21 @@ class Education extends Component {
           <div>
             <input
               onChange={this.handleChange}
-              value={this.state.fullName}
+              value={this.state.dates}
               type="text"
               placeholder="Full name"
               name="fullName"
             />
             <input
               onChange={this.handleChange}
-              value={this.state.phone}
+              value={this.state.UniversityAndCity}
+              type="text"
+              placeholder="phone"
+              name="phone"
+            />
+            <input
+              onChange={this.handleChange}
+              value={this.state.field}
               type="text"
               placeholder="phone"
               name="phone"
