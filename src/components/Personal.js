@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import img from "./Krystian.jpg";
 
 class Personal extends Component {
   constructor(props) {
@@ -27,8 +28,11 @@ class Personal extends Component {
     const { fullName, phone } = this.state;
     return (
       <div id="Personal">
-        <h2>{fullName ? fullName : "Krystian"}</h2>
-        <h2>{phone ? phone : "999999999"}</h2>
+        <h2>{fullName ? fullName : "Krystian Wójtowicz"}</h2>
+        {/* <img src={img ? img : ""} alt="" /> */}
+        <label htmlFor="phone">Telefon</label>
+        <h2>{phone ? phone : "789194734"}</h2>
+
         <button onClick={this.handleClick} className="to-edit">
           edit
         </button>

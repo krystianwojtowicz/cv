@@ -9,7 +9,9 @@ class Resume extends Component {
     return (
       <>
         <div id="resume">
-          <div id="personal"></div>
+          <div id="personal">
+            <Personal></Personal>
+          </div>
           <div id="other">
             <Education></Education>
           </div>

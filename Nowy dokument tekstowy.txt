@@ -1,1 +1,1 @@
-map w edu i exp
+clear after renderer pdf

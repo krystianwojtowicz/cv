@@ -7,7 +7,10 @@ class App extends Component {
   render() {
     return (
       <>
-        <Instructions></Instructions>
+        <div className="invisible">
+          <Instructions></Instructions>
+        </div>
+
         <Resume />
         <div className="divFooter">
           Wyrażam zgodę na przetwarzanie danych osobowych zawartych w niniejszym

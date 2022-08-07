@@ -3,11 +3,48 @@
   padding: 0;
   border: 0;
 }
+
+/* Resume */
 #resume {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
+#personal {
+  background-color: #ecebeb;
+}
+
+#personal label {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#personal h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#personal h2:first-child {
+  margin-top: 50px;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Instructions */
+.invisible {
+  text-align: center;
+}
+/* General */
+#other {
+  background-color: #f9f9f9;
+}
 input {
   border: 1px solid black;
 }
@@ -31,11 +68,18 @@ input {
   }
 }
 @media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
   div.divFooter {
     position: fixed;
     bottom: 0;
     text-align: center;
     margin: 5px;
+    background-color: #e5e4e5;
+  }
+  .invisible {
+    display: none;
   }
 }
 
