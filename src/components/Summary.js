@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import uniqid from "uniqid";
+import Skills from "./Skills";
 
 class Summary extends Component {
   constructor(props) {
@@ -59,7 +60,7 @@ class Summary extends Component {
   }
 
   handleClick = (e) => {
-    e.currentTarget.classList.remove("visible");
+    e.currentTarget.parentElement.classList.remove("visible");
     const {
       linkToRepository,
       linkToWebsite,
@@ -97,62 +98,71 @@ class Summary extends Component {
     } = this.state;
     return (
       <div id="Summary">
-        <h4>Podsumowanie</h4>
-        <hr />
-        <p className="examples">Przykładowe, zrealizowane projekty</p>
-        <div className="summary">
-          {summary.map((summ) => {
-            return (
-              <div key={summ.id}>
-                <label>Link do repozyzorium: </label>
-                <a href={summ.linkToRepository}>{summ.linkToRepository}</a>
-                <br />
-                <label>Link do strony: </label>
-                <a href={summ.linkToWebsite}>{summ.linkToWebsite}</a>
-                <br />
-                <label>Technologie: </label>
-                <p>{summ.technologies}</p>
-                <br />
-                <label>Opis: </label>
-                <p>{summ.description}</p>
-              </div>
-            );
-          })}
+        <div id="summary-inner">
+          <h4>Podsumowanie</h4>
+          <hr />
+          <p className="examples">Przykładowe, zrealizowane projekty</p>
+          <div className="summary">
+            {summary.map((summ) => {
+              return (
+                <div key={summ.id}>
+                  <label>Link do repozyzorium: </label>
+                  <a href={summ.linkToRepository}>{summ.linkToRepository}</a>
+                  <br />
+                  <label>Link do strony: </label>
+                  <a href={summ.linkToWebsite}>{summ.linkToWebsite}</a>
+                  <br />
+                  <label>Technologie: </label>
+                  <p>{summ.technologies}</p>
+                  <br />
+                  <label>Opis: </label>
+                  <p>{summ.description}</p>
+                </div>
+              );
+            })}
+          </div>
+          <p className="github">
+            GitHub:
+            <a href="https://github.com/krystianwojtowicz">
+              https://github.com/krystianwojtowicz
+            </a>
+          </p>
+          <button onClick={this.handleAdd} className="adding">
+            Dodaj
+          </button>
+          <div className="add-summary">
+            <input
+              onChange={this.handleChange}
+              value={this.state.linkToRepository}
+              type="text"
+              placeholder="link To Repository"
+              name="linkToRepository"
+            />
+            <input
+              onChange={this.handleChange}
+              value={this.state.linkToWebsite}
+              type="text"
+              placeholder="link To Website"
+              name="linkToWebsite"
+            />
+            <input
+              onChange={this.handleChange}
+              value={this.state.technologies}
+              type="text"
+              placeholder="technologies"
+              name="technologies"
+            />
+            <input
+              onChange={this.handleChange}
+              value={this.state.description}
+              type="text"
+              placeholder="description"
+              name="description"
+            />
+            <button onClick={this.handleClick}>Dodaj</button>
+          </div>
         </div>
-        <button onClick={this.handleAdd} className="adding">
-          Dodaj
-        </button>
-        <div className="add-summary">
-          <input
-            onChange={this.handleChange}
-            value={this.state.linkToRepository}
-            type="text"
-            placeholder="link To Repository"
-            name="linkToRepository"
-          />
-          <input
-            onChange={this.handleChange}
-            value={this.state.linkToWebsite}
-            type="text"
-            placeholder="link To Website"
-            name="linkToWebsite"
-          />
-          <input
-            onChange={this.handleChange}
-            value={this.state.technologies}
-            type="text"
-            placeholder="technologies"
-            name="technologies"
-          />
-          <input
-            onChange={this.handleChange}
-            value={this.state.description}
-            type="text"
-            placeholder="description"
-            name="description"
-          />
-          <button onClick={this.handleClick}>Dodaj</button>
-        </div>
+        <Skills></Skills>
       </div>
     );
   }

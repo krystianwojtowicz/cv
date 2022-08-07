@@ -3,45 +3,56 @@
   padding: 0;
   border: 0;
 }
+
 .wrapper {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  /* Resume */
 }
-/* Resume */
-#resume {
+
+.wrapper .invisible {
+  text-align: center;
+}
+
+.wrapper input {
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.wrapper #resume {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-#personal {
+.wrapper #resume #Personal {
   background-color: #ecebeb;
   text-align: center;
 }
 
-#personal button {
+.wrapper #resume #Personal button {
   background-color: white;
   padding: 10px;
 }
 
-#personal label {
+.wrapper #resume #Personal label {
   display: block;
   text-align: center;
   font-weight: bold;
   margin-top: 10px;
 }
 
-#personal h2,
-#personal h3 {
+.wrapper #resume #Personal h2,
+.wrapper #resume #Personal h3 {
   text-align: center;
   margin-bottom: 10px;
 }
 
-#personal h2:first-child {
-  margin-top: 50px;
+.wrapper #resume #Personal h2:first-child {
+  padding-top: 50px;
 }
 
-img {
+.wrapper #resume #Personal img {
   width: 200px;
   height: auto;
   display: block;
@@ -49,65 +60,86 @@ img {
   margin-right: auto;
 }
 
-.invisible {
-  text-align: center;
-}
-
-/* Summary */
-#Summary {
-  margin-top: 50px;
-}
-#Summary .adding {
-  visibility: hidden;
-}
-#Summary:hover .adding {
-  visibility: visible;
-}
-.add-summary {
-  visibility: hidden;
-}
-.add-summary.visible {
-  visibility: visible;
-}
-.summary {
-  margin-top: 10px;
-}
-
-.summary div {
-  margin-bottom: 10px;
-}
-.summary p {
-  display: inline;
-}
-.examples {
-  margin-top: 10px;
-}
-/* General */
-#other {
-  background-color: #f9f9f9;
-  padding: 0 30px 0 20px;
-}
-input {
-  border: 1px solid black;
-  margin: 10px 0;
-}
-.form {
+.wrapper #resume #Personal .form {
   visibility: hidden;
   background-color: white;
   /* position: absolute; */
 }
-.form.visible {
-  visibility: visible;
-}
-#Personal .to-edit {
-  visibility: hidden;
-}
-#Personal:hover .to-edit {
+
+.wrapper #resume #Personal .form.visible {
   visibility: visible;
 }
 
-hr {
+.wrapper #resume #Personal .to-edit {
+  visibility: hidden;
+}
+
+.wrapper #resume #Personal:hover .to-edit {
+  visibility: visible;
+}
+
+.wrapper #resume #other {
+  background-color: #f9f9f9;
+  padding: 0 30px 0 20px;
+  /* Summary */
+}
+
+.wrapper #resume #other #Summary {
+  margin-top: 50px;
+  position: relative;
+}
+
+.wrapper #resume #other #Summary .github {
+  margin-bottom: 10px;
+}
+
+.wrapper #resume #other #Summary hr {
   border: 1px solid black;
+}
+
+.wrapper #resume #other #Summary .examples {
+  margin-top: 10px;
+}
+
+.wrapper #resume #other #Summary .summary {
+  margin-top: 10px;
+}
+
+.wrapper #resume #other #Summary .summary div {
+  margin-bottom: 10px;
+}
+
+.wrapper #resume #other #Summary .summary p {
+  display: inline;
+}
+
+.wrapper #resume #other #Summary .adding {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.wrapper #resume #other #Summary .add-summary {
+  visibility: hidden;
+  position: absolute;
+  bottom: 50px;
+  background-color: white;
+}
+
+.wrapper #resume #other #Summary .add-summary input {
+  display: block;
+}
+
+.wrapper #resume #other #Summary .add-summary.visible {
+  visibility: visible;
+}
+
+.wrapper #resume #other #Summary #summary-inner:hover .adding {
+  visibility: visible;
 }
 
 @media screen {
@@ -115,9 +147,11 @@ hr {
     display: none;
   }
 }
+
 @media print {
   body {
     -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   div.divFooter {
     position: fixed;
