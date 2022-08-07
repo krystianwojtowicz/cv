@@ -43,7 +43,7 @@ class Skills extends Component {
     const { skill, skills } = this.state;
     const skillNew = {
       id: uniqid(),
-      skill: "",
+      skill,
     };
     this.setState((prevState) => ({
       skill: "",
