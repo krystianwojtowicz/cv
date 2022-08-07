@@ -7,6 +7,7 @@ class Personal extends Component {
     this.state = {
       fullName: "",
       phone: "",
+      email: "",
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -25,7 +26,7 @@ class Personal extends Component {
     e.currentTarget.nextElementSibling.classList.add("visible");
   }
   render() {
-    const { fullName, phone } = this.state;
+    const { fullName, phone, email } = this.state;
     return (
       <div id="Personal">
         <h2>{fullName ? fullName : "Krystian Wójtowicz"}</h2>
@@ -33,6 +34,8 @@ class Personal extends Component {
         {/* <img src="components/Krystian.jpg" alt="" /> */}
         <label htmlFor="phone">Telefon</label>
         <h2>{phone ? phone : "789194734"}</h2>
+        <label htmlFor="email">E-mail</label>
+        <h3>{email ? email : "krystian1wojtowicz@gmail.com"}</h3>
         <button onClick={this.handleClick} className="to-edit">
           edit
         </button>
@@ -51,6 +54,13 @@ class Personal extends Component {
               type="text"
               placeholder="phone"
               name="phone"
+            />
+            <input
+              onChange={this.handleChange}
+              value={this.state.email}
+              type="text"
+              placeholder="email"
+              name="email"
             />
           </div>
           <button type="submit">submit</button>

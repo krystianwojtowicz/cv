@@ -106,18 +106,21 @@ class Education extends Component {
           <input
             type="text"
             placeholder="dodaj daty"
+            name="dates"
             value={this.state.dates}
             onChange={this.handleDates}
           />
           <input
             type="text"
             placeholder="dodaj uczelnie i miasto"
+            name="UniversityAndCity"
             value={this.state.UniversityAndCity}
             onChange={this.handleUAC}
           />
           <input
             type="text"
             placeholder="dodaj kierunek"
+            name="field"
             value={this.state.field}
             onChange={this.handleField}
           />

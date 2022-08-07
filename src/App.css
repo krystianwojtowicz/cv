@@ -16,6 +16,12 @@
 
 #personal {
   background-color: #ecebeb;
+  text-align: center;
+}
+
+#personal button {
+  background-color: white;
+  padding: 10px;
 }
 
 #personal label {
@@ -25,7 +31,8 @@
   margin-top: 10px;
 }
 
-#personal h2 {
+#personal h2,
+#personal h3 {
   text-align: center;
   margin-bottom: 10px;
 }
@@ -55,6 +62,7 @@ img:not([src]) {
 }
 input {
   border: 1px solid black;
+  margin: 10px 0;
 }
 .form {
   visibility: hidden;
