@@ -67,8 +67,14 @@
     #other {
       background-color: #f9f9f9;
       padding: 0 30px 0 20px;
+ 
       /* Summary */
       #Summary {
+        #Skills {
+          .skills {
+            margin-left: 20px;
+          }
+        }
         margin-top: 50px;
         position: relative;
         .github {

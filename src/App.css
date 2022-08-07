@@ -89,6 +89,10 @@
   position: relative;
 }
 
+.wrapper #resume #other #Summary #Skills .skills {
+  margin-left: 20px;
+}
+
 .wrapper #resume #other #Summary .github {
   margin-bottom: 10px;
 }

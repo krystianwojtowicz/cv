@@ -37,7 +37,6 @@ class Skills extends Component {
   }
   handleClick() {
     // e.currentTarget.nextElementSibling.classList.add("visible");
-    console.log("dziala");
     const { skill, skills } = this.state;
     const skillNew = {
       id: uniqid(),
