@@ -34,5 +34,12 @@ input {
   div.divFooter {
     position: fixed;
     bottom: 0;
+    text-align: center;
+    margin: 5px;
   }
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
 }
