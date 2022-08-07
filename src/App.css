@@ -48,17 +48,44 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-/* img[content: url("components/Krystian.jpg")],
-img:not([src]) {
-  display: none;
-} */
-/* Instructions */
+
 .invisible {
   text-align: center;
+}
+
+/* Summary */
+#Summary {
+  margin-top: 50px;
+}
+#Summary .adding {
+  visibility: hidden;
+}
+#Summary:hover .adding {
+  visibility: visible;
+}
+.add-summary {
+  visibility: hidden;
+}
+.add-summary.visible {
+  visibility: visible;
+}
+.summary {
+  margin-top: 10px;
+}
+
+.summary div {
+  margin-bottom: 10px;
+}
+.summary p {
+  display: inline;
+}
+.examples {
+  margin-top: 10px;
 }
 /* General */
 #other {
   background-color: #f9f9f9;
+  padding: 0 30px 0 20px;
 }
 input {
   border: 1px solid black;
@@ -66,16 +93,21 @@ input {
 }
 .form {
   visibility: hidden;
+  background-color: white;
   /* position: absolute; */
 }
 .form.visible {
   visibility: visible;
 }
-.to-edit {
+#Personal .to-edit {
   visibility: hidden;
 }
 #Personal:hover .to-edit {
   visibility: visible;
+}
+
+hr {
+  border: 1px solid black;
 }
 
 @media screen {

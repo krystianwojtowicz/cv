@@ -1,162 +1,161 @@
-// import React, { Component } from "react";
-// import uniqid from "uniqid";
+import React, { Component } from "react";
+import uniqid from "uniqid";
 
-// class Summary extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//         general: ''
-//       id: uniqid(),
-//       dates: "",
-//       UniversityAndCity: "",
-//       field: "",
-//       education: [
-//         {
-//           id: uniqid(),
-//           dates: "2011-2016",
-//           UniversityAndCity: "Politechnika Warszawska",
-//           field: "elektrotechnika",
-//         },
-//       ],
-//     };
-//   }
+class Summary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: uniqid(),
+      linkToRepository: "",
+      linkToWebsite: "",
+      technologies: "",
+      description: "",
+      summary: [
+        {
+          id: uniqid(),
+          linkToRepository: "https://github.com/krystianwojtowicz/cv",
+          linkToWebsite: "https://krystianwojtowicz.github.io/cv/",
+          technologies: "react, html, js, css",
+          description:
+            "Strona, w której tworzę elementy dynamicznie, dzięki niej mogę szybko edytować CV",
+        },
+        {
+          id: uniqid(),
+          linkToRepository: "https://github.com/krystianwojtowicz/todo",
+          linkToWebsite: "https://krystianwojtowicz.github.io/todo/",
+          technologies: "html, js, css",
+          description:
+            "Strona, w której tworzę elementy dynamicznie, dokłada zadania to wielowymiarowej tablicy projektów, strona z wykorzystaniem localStorage",
+        },
+        {
+          id: uniqid(),
+          linkToRepository:
+            "https://github.com/krystianwojtowicz/frontend-recruitment-task",
+          linkToWebsite:
+            "https://krystianwojtowicz.github.io/frontend-recruitment-task/",
+          technologies: "html, js, css-grid, WCAG",
+          description:
+            "Treść zadania jest dołączona do readme, w tym zadaniu wykorzystałem grid, jest to strona spełniająca WCAG.",
+        },
+        {
+          id: uniqid(),
+          linkToRepository:
+            "https://github.com/krystianwojtowicz/website-with-bem-and-scss",
+          linkToWebsite:
+            "https://krystianwojtowicz.github.io/website-with-bem-and-scss/",
+          technologies: "html, js, css",
+          description: "Strona z wykorzystaniem BEM i SCSS",
+        },
+      ],
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(event) {
+    this.setState({
+      // Computed property names
+      // keys of the objects are computed dynamically
+      [event.target.name]: event.target.value,
+    });
+  }
 
-//   // handleChange(event) {
-//   //   this.setState({
-//   //     // Computed property names
-//   //     // keys of the objects are computed dynamically
-//   //     [event.target.name]: event.target.value,
-//   //   });
-//   // }
-//   // onSubmitTask(e) {
-//   //   e.preventDefault();
-//   //   e.currentTarget.classList.remove("visible");
-//   // }
-//   // handleClick(e) {
-//   //   e.currentTarget.nextElementSibling.classList.add("visible");
-//   // }
+  handleClick = (e) => {
+    e.currentTarget.classList.remove("visible");
+    const {
+      linkToRepository,
+      linkToWebsite,
+      description,
+      technologies,
+      summary,
+    } = this.state;
+    const summaryNew = {
+      id: uniqid(),
+      linkToRepository,
+      linkToWebsite,
+      description,
+      technologies,
+    };
+    this.setState((prevState) => ({
+      linkToRepository: "",
+      linkToWebsite: "",
+      technologies: "",
+      description: "",
+      summary: [...prevState.summary, summaryNew],
+    }));
+  };
 
-//   handleDates = (e) => {
-//     this.setState({
-//       dates: e.target.value,
-//     });
-//   };
+  handleAdd(e) {
+    e.currentTarget.nextElementSibling.classList.add("visible");
+  }
 
-//   handleUAC = (e) => {
-//     this.setState({
-//       UniversityAndCity: e.target.value,
-//     });
-//   };
+  render() {
+    const {
+      inkToRepository,
+      linkToWebsite,
+      description,
+      technologies,
+      summary,
+    } = this.state;
+    return (
+      <div id="Summary">
+        <h4>Podsumowanie</h4>
+        <hr />
+        <p className="examples">Przykładowe, zrealizowane projekty</p>
+        <div className="summary">
+          {summary.map((summ) => {
+            return (
+              <div key={summ.id}>
+                <label>Link do repozyzorium: </label>
+                <a href={summ.linkToRepository}>{summ.linkToRepository}</a>
+                <br />
+                <label>Link do strony: </label>
+                <a href={summ.linkToWebsite}>{summ.linkToWebsite}</a>
+                <br />
+                <label>Technologie: </label>
+                <p>{summ.technologies}</p>
+                <br />
+                <label>Opis: </label>
+                <p>{summ.description}</p>
+              </div>
+            );
+          })}
+        </div>
+        <button onClick={this.handleAdd} className="adding">
+          Dodaj
+        </button>
+        <div className="add-summary">
+          <input
+            onChange={this.handleChange}
+            value={this.state.linkToRepository}
+            type="text"
+            placeholder="link To Repository"
+            name="linkToRepository"
+          />
+          <input
+            onChange={this.handleChange}
+            value={this.state.linkToWebsite}
+            type="text"
+            placeholder="link To Website"
+            name="linkToWebsite"
+          />
+          <input
+            onChange={this.handleChange}
+            value={this.state.technologies}
+            type="text"
+            placeholder="technologies"
+            name="technologies"
+          />
+          <input
+            onChange={this.handleChange}
+            value={this.state.description}
+            type="text"
+            placeholder="description"
+            name="description"
+          />
+          <button onClick={this.handleClick}>Dodaj</button>
+        </div>
+      </div>
+    );
+  }
+}
 
-//   handleField = (e) => {
-//     this.setState({
-//       field: e.target.value,
-//     });
-//   };
-
-//   handleClick = () => {
-//     const { dates, UniversityAndCity, field, education } = this.state;
-//     const educationNew = {
-//       id: uniqid(),
-//       dates,
-//       UniversityAndCity,
-//       field,
-//     };
-
-//     this.setState((prevState) => ({
-//       dates: "",
-//       UniversityAndCity: "",
-//       field: "",
-//       education: [...prevState.education, educationNew],
-//     }));
-//     // const { dates, UniversityAndCity, field, education } = this.state;
-//     // const add = this.props.add(dates, UniversityAndCity, field, education);
-//     // if (add) {
-//     //   this.setState({
-//     //     text: "",
-//     //     checked: false,
-//     //     date: this.minDate,
-//     //   });
-//     // }
-//   };
-
-//   // handleAdding = () => {
-//   //   const { dates, UniversityAndCity, field } = this.state;
-//   // };
-//   render() {
-//     const { dates, UniversityAndCity, field, education } = this.state;
-
-//     return (
-//       <div id="Personal">
-//         {education.map((task) => {
-//           return (
-//             <div key={task.id}>
-//               <h2>{task.dates}</h2>
-//               <h2>{task.UniversityAndCity}</h2>
-//               <h2>{task.field}</h2>
-//             </div>
-//           );
-//         })}
-//         {/* <h2>{dates ? dates : "2011 - 2016"}</h2>
-//         <h2>
-//           {UniversityAndCity ? UniversityAndCity : "Politechnika Warszawska"}
-//         </h2>
-//         <h2>{field ? field : "elektrotechnika"}</h2> */}
-
-//         <div>
-//           <input
-//             type="text"
-//             placeholder="dodaj daty"
-//             value={this.state.dates}
-//             onChange={this.handleDates}
-//           />
-//           <input
-//             type="text"
-//             placeholder="dodaj uczelnie i miasto"
-//             value={this.state.UniversityAndCity}
-//             onChange={this.handleUAC}
-//           />
-//           <input
-//             type="text"
-//             placeholder="dodaj kierunek"
-//             value={this.state.field}
-//             onChange={this.handleField}
-//           />
-//           <br />
-//           <button onClick={this.handleClick}>Dodaj</button>
-//         </div>
-//         {/* <button onClick={this.handleClick} className="to-edit">
-//           edit
-//         </button>
-//         <form className="form" onSubmit={this.onSubmitTask}>
-//           <div>
-//             <input
-//               onChange={this.handleChange}
-//               value={this.state.dates}
-//               type="text"
-//               placeholder="Full name"
-//               name="dates"
-//             />
-//             <input
-//               onChange={this.handleChange}
-//               value={this.state.UniversityAndCity}
-//               type="text"
-//               placeholder="phone"
-//               name="UniversityAndCity"
-//             />
-//             <input
-//               onChange={this.handleChange}
-//               value={this.state.field}
-//               type="text"
-//               placeholder="phone"
-//               name="field"
-//             />
-//           </div>
-//           <button type="submit">submit</button>
-//         </form> */}
-//       </div>
-//     );
-//   }
-// }
-
-// export default Education;
+export default Summary;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Personal from "./Personal";
 import Experience from "./Experience";
 import Education from "./Education";
-import ReactToPrint from "react-to-print";
+import Summary from "./Summary";
 
 class Resume extends Component {
   render() {
@@ -13,6 +13,7 @@ class Resume extends Component {
             <Personal></Personal>
           </div>
           <div id="other">
+            <Summary></Summary>
             <Education></Education>
           </div>
           {/* usunac strictmode w index.js by nie miec bledu przy  drukowaniu -to w startm pdfie co nie ma stopki*/}

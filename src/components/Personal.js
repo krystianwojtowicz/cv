@@ -35,7 +35,7 @@ class Personal extends Component {
         <label htmlFor="phone">Telefon</label>
         <h2>{phone ? phone : "789194734"}</h2>
         <label htmlFor="email">E-mail</label>
-        <h3>{email ? email : "krystian1wojtowicz@gmail.com"}</h3>
+        <h4>{email ? email : "krystian1wojtowicz@gmail.com"}</h4>
         <button onClick={this.handleClick} className="to-edit">
           edit
         </button>

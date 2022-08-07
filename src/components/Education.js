@@ -18,40 +18,16 @@ class Education extends Component {
         },
       ],
     };
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  // handleChange(event) {
-  //   this.setState({
-  //     // Computed property names
-  //     // keys of the objects are computed dynamically
-  //     [event.target.name]: event.target.value,
-  //   });
-  // }
-  // onSubmitTask(e) {
-  //   e.preventDefault();
-  //   e.currentTarget.classList.remove("visible");
-  // }
-  // handleClick(e) {
-  //   e.currentTarget.nextElementSibling.classList.add("visible");
-  // }
-
-  handleDates = (e) => {
+  handleChange(event) {
     this.setState({
-      dates: e.target.value,
+      // Computed property names
+      // keys of the objects are computed dynamically
+      [event.target.name]: event.target.value,
     });
-  };
-
-  handleUAC = (e) => {
-    this.setState({
-      UniversityAndCity: e.target.value,
-    });
-  };
-
-  handleField = (e) => {
-    this.setState({
-      field: e.target.value,
-    });
-  };
+  }
 
   handleClick = () => {
     const { dates, UniversityAndCity, field, education } = this.state;
@@ -68,39 +44,22 @@ class Education extends Component {
       field: "",
       education: [...prevState.education, educationNew],
     }));
-    // const { dates, UniversityAndCity, field, education } = this.state;
-    // const add = this.props.add(dates, UniversityAndCity, field, education);
-    // if (add) {
-    //   this.setState({
-    //     text: "",
-    //     checked: false,
-    //     date: this.minDate,
-    //   });
-    // }
   };
 
-  // handleAdding = () => {
-  //   const { dates, UniversityAndCity, field } = this.state;
-  // };
   render() {
     const { dates, UniversityAndCity, field, education } = this.state;
 
     return (
       <div id="Personal">
-        {education.map((task) => {
+        {education.map((educ) => {
           return (
-            <div key={task.id}>
-              <h2>{task.dates}</h2>
-              <h2>{task.UniversityAndCity}</h2>
-              <h2>{task.field}</h2>
+            <div key={educ.id}>
+              <h2>{educ.dates}</h2>
+              <h2>{educ.UniversityAndCity}</h2>
+              <h2>{educ.field}</h2>
             </div>
           );
         })}
-        {/* <h2>{dates ? dates : "2011 - 2016"}</h2>
-        <h2>
-          {UniversityAndCity ? UniversityAndCity : "Politechnika Warszawska"}
-        </h2>
-        <h2>{field ? field : "elektrotechnika"}</h2> */}
 
         <div>
           <input
@@ -108,54 +67,25 @@ class Education extends Component {
             placeholder="dodaj daty"
             name="dates"
             value={this.state.dates}
-            onChange={this.handleDates}
+            onChange={this.handleChange}
           />
           <input
             type="text"
             placeholder="dodaj uczelnie i miasto"
             name="UniversityAndCity"
             value={this.state.UniversityAndCity}
-            onChange={this.handleUAC}
+            onChange={this.handleChange}
           />
           <input
             type="text"
             placeholder="dodaj kierunek"
             name="field"
             value={this.state.field}
-            onChange={this.handleField}
+            onChange={this.handleChange}
           />
           <br />
           <button onClick={this.handleClick}>Dodaj</button>
         </div>
-        {/* <button onClick={this.handleClick} className="to-edit">
-          edit
-        </button>
-        <form className="form" onSubmit={this.onSubmitTask}>
-          <div>
-            <input
-              onChange={this.handleChange}
-              value={this.state.dates}
-              type="text"
-              placeholder="Full name"
-              name="dates"
-            />
-            <input
-              onChange={this.handleChange}
-              value={this.state.UniversityAndCity}
-              type="text"
-              placeholder="phone"
-              name="UniversityAndCity"
-            />
-            <input
-              onChange={this.handleChange}
-              value={this.state.field}
-              type="text"
-              placeholder="phone"
-              name="field"
-            />
-          </div>
-          <button type="submit">submit</button>
-        </form> */}
       </div>
     );
   }
