@@ -6,7 +6,7 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <>
+      <div className="wrapper">
         <div className="invisible">
           <Instructions></Instructions>
         </div>
@@ -22,7 +22,7 @@ class App extends Component {
           swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE
           (RODO).
         </div>
-      </>
+      </div>
     );
   }
 }
