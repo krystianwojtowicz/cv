@@ -4,12 +4,18 @@ import Instructions from "./components/Instructions";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import ResumeToPrint from "./components/ResumeToPrint";
 import "./App.css";
+import { PDFViewer } from "@react-pdf/renderer";
 
 class App extends Component {
   render() {
     return (
       <>
-        <PDFDownloadLink document={<ResumeToPrint />} fileName="Form ">
+        <PDFDownloadLink Document={<ResumeToPrint />} FileName="somename.pdf">
+          {({ Blob, Url, Loading, Error }) =>
+            Loading ? "Loading Document..." : "Download Now!"
+          }
+        </PDFDownloadLink>
+        {/* <PDFDownloadLink document={<ResumeToPrint />} fileName="Form ">
           {({ loading }) =>
             loading ? (
               <button>Loading Document...</button>
@@ -17,7 +23,7 @@ class App extends Component {
               <button>Download</button>
             )
           }
-        </PDFDownloadLink>
+        </PDFDownloadLink> */}
         {/* <ResumeToPrint></ResumeToPrint> */}
 
         {/* <PDFDownloadLink document={<ResumeToPrint />} fileName="movielist.pdf">
