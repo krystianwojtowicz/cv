@@ -3,7 +3,6 @@ import Personal from "./Personal";
 import Experience from "./Experience";
 import Education from "./Education";
 import ReactToPrint from "react-to-print";
-import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
 
 class Resume extends Component {
   render() {
