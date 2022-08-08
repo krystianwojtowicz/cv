@@ -17,19 +17,19 @@ class Experience extends Component {
           positionAndMainDuties: [
             {
               id: uniqid(),
-              duty: "1",
+              duty: "nadzór oraz prowadzenie ewidencji stanów magazynowych",
             },
             {
               id: uniqid(),
-              duty: "2",
+              duty: "nadzór nad prawidłowością danych w wewnętrznym systemie ROF",
             },
             {
               id: uniqid(),
-              duty: "3",
+              duty: "współpraca z kilkudziesięcioma oddziałami firmy w zakresie realizacji ich potrzeb (w tym codzienna współpraca z centralą firmy)",
             },
             {
               id: uniqid(),
-              duty: "4",
+              duty: "nadzór nad prawidłowością danych znajdujących się w systemach obchodowych",
             },
           ],
         },
@@ -83,7 +83,7 @@ class Experience extends Component {
                 <p>Główne obowiązki</p>
                 <ul className="experience-ul">
                   {exp.positionAndMainDuties.map((pos) => {
-                    return <li key={pos.id}>{pos}</li>;
+                    return <li key={pos.id}>{pos.duty}</li>;
                   })}
                 </ul>
               </div>
