@@ -11,6 +11,10 @@
   /* Resume */
 }
 
+.wrapper hr {
+  border: 1px solid black;
+}
+
 .wrapper .invisible {
   text-align: center;
 }
@@ -84,8 +88,19 @@
   /* Summary */
 }
 
+.wrapper #resume #other #Experience {
+  margin-top: 20px;
+}
+
 .wrapper #resume #other #Summary {
   margin-top: 50px;
+}
+
+.wrapper #resume #other #Summary #Skills:hover .adding-skills {
+  visibility: visible;
+}
+
+.wrapper #resume #other #Summary #Skills {
   position: relative;
 }
 
@@ -93,12 +108,29 @@
   margin-left: 20px;
 }
 
-.wrapper #resume #other #Summary .github {
-  margin-bottom: 10px;
+.wrapper #resume #other #Summary #Skills .adding-skills {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
 
-.wrapper #resume #other #Summary hr {
-  border: 1px solid black;
+.wrapper #resume #other #Summary #Skills .add-skills {
+  visibility: hidden;
+  position: absolute;
+  bottom: 50px;
+  background-color: white;
+}
+
+.wrapper #resume #other #Summary #Skills .add-skills.visible {
+  visibility: visible;
+}
+
+.wrapper #resume #other #Summary .github {
+  margin-bottom: 10px;
 }
 
 .wrapper #resume #other #Summary .examples {
@@ -117,16 +149,6 @@
   display: inline;
 }
 
-.wrapper #resume #other #Summary .adding {
-  visibility: hidden;
-  color: white;
-  background-color: black;
-  padding: 10px;
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-}
-
 .wrapper #resume #other #Summary .add-summary {
   visibility: hidden;
   position: absolute;
@@ -140,6 +162,20 @@
 
 .wrapper #resume #other #Summary .add-summary.visible {
   visibility: visible;
+}
+
+.wrapper #resume #other #Summary #summary-inner {
+  position: relative;
+}
+
+.wrapper #resume #other #Summary #summary-inner .adding {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
 
 .wrapper #resume #other #Summary #summary-inner:hover .adding {

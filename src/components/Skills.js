@@ -37,8 +37,8 @@ class Skills extends Component {
       [event.target.name]: event.target.value,
     });
   }
-  handleClick() {
-    // e.currentTarget.nextElementSibling.classList.add("visible");
+  handleClick(e) {
+    e.currentTarget.parentElement.classList.remove("visible");
     console.log("dziala");
     const { skill, skills } = this.state;
     const skillNew = {
@@ -51,7 +51,7 @@ class Skills extends Component {
     }));
   }
   handleAdd(e) {
-    // e.currentTarget.nextElementSibling.classList.add("visible");
+    e.currentTarget.nextElementSibling.classList.add("visible");
   }
   render() {
     const { skill, skills } = this.state;
@@ -63,7 +63,7 @@ class Skills extends Component {
             return <li key={skil.id}>{skil.skill}</li>;
           })}
         </ul>
-        <button onClick={this.handleAdd} className="adding">
+        <button onClick={this.handleAdd} className="adding-skills">
           Dodaj
         </button>
         <div className="add-skills">
@@ -76,7 +76,7 @@ class Skills extends Component {
               name="skill"
             />
           </div>
-          <button onClick={this.handleClick}>Dodajj</button>
+          <button onClick={this.handleClick}>Dodaj</button>
         </div>
       </div>
     );
