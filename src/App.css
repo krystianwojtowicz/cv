@@ -88,8 +88,83 @@
   /* Summary */
 }
 
+.wrapper #resume #other #Education:hover .adding {
+  visibility: visible;
+}
+
+.wrapper #resume #other #Education {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.wrapper #resume #other #Education .add-education {
+  visibility: hidden;
+  position: absolute;
+  bottom: 50px;
+  background-color: white;
+}
+
+.wrapper #resume #other #Education .add-education input {
+  display: block;
+}
+
+.wrapper #resume #other #Education .add-education.visible {
+  visibility: visible;
+}
+
+.wrapper #resume #other #Education p:first-child {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.wrapper #resume #other #Education .adding {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.wrapper #resume #other #Experience:hover .adding {
+  visibility: visible;
+}
+
 .wrapper #resume #other #Experience {
   margin-top: 20px;
+  position: relative;
+}
+
+.wrapper #resume #other #Experience .add-experience {
+  visibility: hidden;
+  position: absolute;
+  bottom: 50px;
+  background-color: white;
+}
+
+.wrapper #resume #other #Experience .add-experience input {
+  display: block;
+}
+
+.wrapper #resume #other #Experience .add-experience.visible {
+  visibility: visible;
+}
+
+.wrapper #resume #other #Experience .adding {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.wrapper #resume #other #Experience .experience div p:first-child {
+  text-align: right;
+  margin-top: 10px;
 }
 
 .wrapper #resume #other #Summary {
@@ -194,9 +269,11 @@
     print-color-adjust: exact;
   }
   div.divFooter {
+    font-size: 11px;
     position: fixed;
     bottom: 0;
     text-align: center;
+    padding: 10px;
     margin: 5px;
     background-color: #e5e4e5;
   }

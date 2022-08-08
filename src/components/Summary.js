@@ -99,7 +99,7 @@ class Summary extends Component {
     return (
       <div id="Summary">
         <div id="summary-inner">
-          <h4>Podsumowanie</h4>
+          <h3>Podsumowanie</h3>
           <hr />
           <p className="examples">Przykładowe, zrealizowane projekty</p>
           <div className="summary">

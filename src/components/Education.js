@@ -29,7 +29,8 @@ class Education extends Component {
     });
   }
 
-  handleClick = () => {
+  handleClick = (e) => {
+    e.currentTarget.parentElement.classList.remove("visible");
     const { dates, UniversityAndCity, field, education } = this.state;
     const educationNew = {
       id: uniqid(),
@@ -46,44 +47,54 @@ class Education extends Component {
     }));
   };
 
+  handleAdd(e) {
+    e.currentTarget.nextElementSibling.classList.add("visible");
+  }
+
   render() {
     const { dates, UniversityAndCity, field, education } = this.state;
 
     return (
-      <div id="Personal">
+      <div id="Education">
+        <h3>Wykształcenie</h3>
+        <hr />
         {education.map((educ) => {
           return (
             <div key={educ.id}>
-              <h2>{educ.dates}</h2>
-              <h2>{educ.UniversityAndCity}</h2>
-              <h2>{educ.field}</h2>
+              <p>{educ.dates}</p>
+              <p>
+                <b>{educ.UniversityAndCity}</b>
+              </p>
+              <label htmlFor="field">kierunek: </label>
+              <p style={{ display: "inline" }}>{educ.field}</p>
             </div>
           );
         })}
-
-        <div>
+        <button onClick={this.handleAdd} className="adding">
+          Dodaj
+        </button>
+        <div className="add-education">
           <input
             type="text"
-            placeholder="dodaj daty"
+            placeholder="dates"
             name="dates"
             value={this.state.dates}
             onChange={this.handleChange}
           />
           <input
             type="text"
-            placeholder="dodaj uczelnie i miasto"
+            placeholder="university and city"
             name="UniversityAndCity"
             value={this.state.UniversityAndCity}
             onChange={this.handleChange}
           />
           <input
             type="text"
-            placeholder="dodaj kierunek"
+            placeholder="field"
             name="field"
             value={this.state.field}
             onChange={this.handleChange}
           />
-          <br />
           <button onClick={this.handleClick}>Dodaj</button>
         </div>
       </div>

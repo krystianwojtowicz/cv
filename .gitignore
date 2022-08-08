@@ -1,6 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 src/components/Krystian.jpg
+src/Nowydokumenttekstowy.txt
+src/components/Experienceopy
 
 # dependencies
 /node_modules

@@ -28,7 +28,6 @@ class Skills extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    // z tym nie wywala bledu
   }
   handleChange(event) {
     this.setState({

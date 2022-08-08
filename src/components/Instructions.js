@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 function Instructions() {
   const notify = () => {
     toast(
-      " Hover over the areas of the resume to find Edit and Add buttons. Edit your information in the form fields and submit your edits. Add your Education and Experience or click on entries to remove them. When your done editing, use 'Generate to pdf' to print your resume to pdf",
+      " Hover over the areas of the resume to find Edit and Add buttons. Edit your information in the form fields and submit your edits. Add your Education, Experience and Skills.",
       { position: toast.POSITION.TOP_CENTER }
     );
   };

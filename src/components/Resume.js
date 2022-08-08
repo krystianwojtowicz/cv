@@ -16,32 +16,20 @@ class Resume extends Component {
             <Summary></Summary>
             <Experience></Experience>
             <Education></Education>
+            <h3>Języki obce</h3>
+            <hr />
+            <p style={{ marginTop: "10px" }}>angielski - B2</p>
+            <h3 style={{ marginTop: "20px" }}>Zainteresowania</h3>
+            <hr />
+            <ul style={{ margin: "20px 0 0 20px" }}>
+              <li>ćwiczenia na siłowni</li>
+              <li>wspinaczka</li>
+            </ul>
           </div>
-          {/* usunac strictmode w index.js by nie miec bledu przy  drukowaniu -to w startm pdfie co nie ma stopki*/}
-          {/* <Personal></Personal> */}
-          {/* <Experience></Experience> */}
         </div>
       </>
     );
   }
 }
-
-// class Resume extends React.PureComponent {
-//   render() {
-//     return (
-//       <div>
-//         <ReactToPrint
-//           trigger={() => {
-//             // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop
-//             // to the root node of the returned component as it will be overwritten.
-//             return <a href="#">Print this out!</a>;
-//           }}
-//           content={() => this.componentRef}
-//         />
-//         <ComponentToPrint ref={(el) => (this.componentRef = el)} />
-//       </div>
-//     );
-//   }
-// }
 
 export default Resume;
