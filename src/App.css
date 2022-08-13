@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  max-width: 1000px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   /* Resume */
@@ -141,6 +141,10 @@
   margin-bottom: 80px;
 }
 
+.wrapper #resume #other #Experience hr {
+  margin-bottom: 20px;
+}
+
 .wrapper #resume #other #Experience .add-experience {
   visibility: hidden;
   position: absolute;
@@ -183,6 +187,8 @@
   position: relative;
   margin-top: 40px;
   margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .wrapper #resume #other #Summary #Skills .skills {

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .wrapper {
-  max-width: 1000px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   hr {
@@ -21,7 +21,6 @@
   #resume {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    // align-content: flex-start;
     #Personal {
       background-color: #ecebeb;
       text-align: center;
@@ -111,6 +110,8 @@
         position: relative;
         // do druku
         hr {margin-bottom: 80px;}
+        // normalnie
+        hr {margin-bottom: 20px;}
         .add-experience {
           visibility: hidden;
           position: absolute;
@@ -151,6 +152,9 @@
           // marginy do druku
           margin-top: 40px;
           margin-bottom: 40px;
+          // normalnie
+          margin-top: 20px;
+          margin-bottom: 20px;
           .skills {
             margin-left: 20px;
           }
