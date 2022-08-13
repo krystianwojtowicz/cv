@@ -137,6 +137,10 @@
   position: relative;
 }
 
+.wrapper #resume #other #Experience hr {
+  margin-bottom: 80px;
+}
+
 .wrapper #resume #other #Experience .add-experience {
   visibility: hidden;
   position: absolute;
@@ -177,6 +181,8 @@
 
 .wrapper #resume #other #Summary #Skills {
   position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .wrapper #resume #other #Summary #Skills .skills {

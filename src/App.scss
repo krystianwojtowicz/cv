@@ -109,6 +109,8 @@
       #Experience {
         margin-top: 20px;
         position: relative;
+        // do druku
+        hr {margin-bottom: 80px;}
         .add-experience {
           visibility: hidden;
           position: absolute;
@@ -146,6 +148,9 @@
         }
         #Skills {
           position: relative;
+          // marginy do druku
+          margin-top: 40px;
+          margin-bottom: 40px;
           .skills {
             margin-left: 20px;
           }
