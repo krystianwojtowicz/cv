@@ -175,6 +175,10 @@
   margin-top: 10px;
 }
 
+.wrapper #resume #other #Experience .experience ul {
+  margin-left: 20px;
+}
+
 .wrapper #resume #other #Summary {
   margin-top: 50px;
 }

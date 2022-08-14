@@ -8,7 +8,7 @@ class Experience extends Component {
       id: uniqid(),
       dates: "",
       companyAndCity: "",
-      positionAndMainDuties: [],
+      positionAndMainDuties: "",
       experience: [
         // {
         //   id: uniqid(),
@@ -96,8 +96,8 @@ class Experience extends Component {
           dates: "07/2014 – 08/2014",
           companyAndCity: "Bombardier Transportation Polska Sp. z o. o.",
           positionAndMainDuties:
-            // "edytowanie projektów w programie AutoCAD, pomoc w realizacji etapów prac projektowych związanych z nowymi oraz modernizowanymi wyrobami taboru kolejowego, ścisła współpraca z działami zaangażowanymi w realizację projektów taboru kolejowego, wsparcie techniczne przy realizacji umów. Były to praktyki studenckie",
-            "editing projects in AutoCAD, assistance in the implementation of design stages related to new and modernized rolling stock products • close cooperation with departments involved in the implementation of rolling stock projects, technical support in the implementation of contracts",
+            "edytowanie projektów w programie AutoCAD, pomoc w realizacji etapów prac projektowych związanych z nowymi oraz modernizowanymi wyrobami taboru kolejowego, ścisła współpraca z działami zaangażowanymi w realizację projektów taboru kolejowego, wsparcie techniczne przy realizacji umów. Były to praktyki studenckie",
+          // "editing projects in AutoCAD, assistance in the implementation of design stages related to new and modernized rolling stock products • close cooperation with departments involved in the implementation of rolling stock projects, technical support in the implementation of contracts",
         },
       ],
     };
@@ -155,11 +155,7 @@ class Experience extends Component {
                   Main duties:
                   {/* Główne obowiązki: */}
                 </p>
-                <ul>
-                  {exp.positionAndMainDuties.split(",").map((pos, index) => {
-                    return <li key={index}>{pos}</li>;
-                  })}
-                </ul>
+                <p>{exp.positionAndMainDuties}</p>
               </div>
             );
           })}
