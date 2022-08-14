@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 20px;
 }
 
 .wrapper {
@@ -174,10 +173,6 @@
 .wrapper #resume #other #Experience .experience div p:first-child {
   text-align: right;
   margin-top: 10px;
-}
-
-.wrapper #resume #other #Experience .experience div:nth-child(2) {
-  margin-top: 50px;
 }
 
 .wrapper #resume #other #Summary {
