@@ -18,7 +18,8 @@ class Summary extends Component {
           linkToWebsite: "https://krystianwojtowicz.github.io/cv/",
           technologies: "react, html, js, css",
           description:
-            "Strona, w której tworzę elementy dynamicznie, dzięki niej mogę szybko edytować CV",
+            // "Strona, w której tworzę elementy dynamicznie, dzięki niej mogę szybko edytować CV",
+            "A webpage, where I create elements dynamically, thanks to which I can quickly edit my CV.",
         },
         {
           id: uniqid(),
@@ -26,7 +27,8 @@ class Summary extends Component {
           linkToWebsite: "https://krystianwojtowicz.github.io/todo/",
           technologies: "html, js, css",
           description:
-            "Strona, w której tworzę elementy dynamicznie, dokłada zadania to wielowymiarowej tablicy projektów, strona z wykorzystaniem localStorage",
+            // "Strona, w której tworzę elementy dynamicznie, dokłada zadania to wielowymiarowej tablicy projektów, strona z wykorzystaniem localStorage",
+            "A webpage in which I create elements dynamically, adds tasks to a multidimensional array of projects, webpage using localStorage.",
         },
         {
           id: uniqid(),
@@ -36,7 +38,8 @@ class Summary extends Component {
             "https://krystianwojtowicz.github.io/frontend-recruitment-task/",
           technologies: "html, js, css-grid, WCAG",
           description:
-            "Treść zadania jest dołączona do readme, w tym zadaniu wykorzystałem grid, jest to strona spełniająca WCAG.",
+            // "Treść zadania jest dołączona do readme, w tym zadaniu wykorzystałem grid, jest to strona spełniająca WCAG.",
+            "The task content is attached to the readme, in this webpage I used a grid, it is a WCAG compliant webpage.",
         },
         {
           id: uniqid(),
@@ -45,7 +48,9 @@ class Summary extends Component {
           linkToWebsite:
             "https://krystianwojtowicz.github.io/website-with-bem-and-scss/",
           technologies: "html, js, css",
-          description: "Strona z wykorzystaniem BEM i SCSS",
+          description:
+            // "Strona z wykorzystaniem BEM i SCSS",
+            "A webpage with the use of BEM and SCSS",
         },
       ],
     };
@@ -99,23 +104,41 @@ class Summary extends Component {
     return (
       <div id="Summary">
         <div id="summary-inner">
-          <h3>Podsumowanie</h3>
+          <h3>
+            {/* Podsumowanie */}
+            Summary
+          </h3>
           <hr />
-          <p className="examples">Przykładowe, zrealizowane projekty</p>
+          <p className="examples">
+            {/* Przykładowe, zrealizowane projekty */}
+            Examples of completed projects:
+          </p>
           <div className="summary">
             {summary.map((summ) => {
               return (
                 <div key={summ.id}>
-                  <label>Link do repozyzorium: </label>
+                  <label>
+                    {/* Link do repozyzorium:  */}
+                    Link to repository:{" "}
+                  </label>
                   <a href={summ.linkToRepository}>{summ.linkToRepository}</a>
                   <br />
-                  <label>Link do strony: </label>
+                  <label>
+                    {/* Link do strony:  */}
+                    Link to the website:{" "}
+                  </label>
                   <a href={summ.linkToWebsite}>{summ.linkToWebsite}</a>
                   <br />
-                  <label>Technologie: </label>
+                  <label>
+                    {/* Technologie:  */}
+                    Technologies:{" "}
+                  </label>
                   <p>{summ.technologies}</p>
                   <br />
-                  <label>Opis: </label>
+                  <label>
+                    {/* Opis:  */}
+                    Description:{" "}
+                  </label>
                   <p>{summ.description}</p>
                 </div>
               );

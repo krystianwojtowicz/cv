@@ -10,46 +10,94 @@ class Experience extends Component {
       companyAndCity: "",
       positionAndMainDuties: "",
       experience: [
+        // {
+        //   id: uniqid(),
+        //   dates: "10/2019 - obecnie",
+        //   companyAndCity: "Solid Security Sp. z o.o., Warszawa",
+        //   positionAndMainDuties:
+        //     " Nadzór oraz prowadzeni ewidencji stanów magazynowych, nadzór nad prawidłowością danych w wewnętrznym systemie ROF, współpraca z kilkudziesięcioma oddziałami firmy w zakresie, realizacji ich potrzeb (w tym codzienna współpraca z centralą firmy), nadzór nad prawidłowością danych znajdujących się w systemach obchodowych.",
+        // },
+        // {
+        //   id: uniqid(),
+        //   dates: "9/2019",
+        //   companyAndCity: "CTDI Poland Sp. z o.o",
+        //   positionAndMainDuties:
+        //     "Diagnoza, naprawa i dokumentowanie naprawy urządzeń zgodnie z procedurami i wytycznymi, w tym: diagnoza usterek jak również wykonywanie stosownych pomiarów urządzeń, wymiana zdiagnozowanych modułów elektronicznych, aktualizacja oprogramowania oraz wykonywanie wymaganych strojeń, wykonywanie specjalistycznych testów zgodności urządzeń, ykonywanie ekspertyz technicznych urządzeń. Praca jako serwisant urządzeń elektrycznych.",
+        // },
+        // {
+        //   id: uniqid(),
+        //   dates: "2/2018 - 8/2019",
+        //   companyAndCity: "Cyfrowy Polsat",
+        //   positionAndMainDuties: "skanowanie kart i dekoderów",
+        // },
+        // {
+        //   id: uniqid(),
+        //   dates: "1/2019 - 3/2019",
+        //   companyAndCity: "Group AV Sp. z o.o",
+        //   positionAndMainDuties:
+        //     "projektowanie systemów audiowizualnych, analiza rynku pod kątem pozyskania specjalistycznych urządzeń spełniających wymagania realizowanego projektu zgodnie ze specyfikacją techniczną.",
+        // },
+        // {
+        //   id: uniqid(),
+        //   dates: "08/2015 – 11/2016",
+        //   companyAndCity: "INF ENERG Sp. z o. o",
+        //   positionAndMainDuties:
+        //     "opisywanie elementów elektrycznych, paszportyzacja sieci",
+        // },
+        // {
+        //   id: uniqid(),
+        //   dates: "07/2014 – 08/2014",
+        //   companyAndCity: "Bombardier Transportation Polska Sp. z o. o.",
+        //   positionAndMainDuties:
+        //     "edytowanie projektów w programie AutoCAD, pomoc w realizacji etapów prac projektowych związanych z nowymi oraz modernizowanymi wyrobami taboru kolejowego, ścisła współpraca z działami zaangażowanymi w realizację projektów taboru kolejowego, wsparcie techniczne przy realizacji umów. Były to praktyki studenckie",
+        // },
         {
           id: uniqid(),
-          dates: "10/2019 - obecnie",
+          dates: "10/2019 - now",
           companyAndCity: "Solid Security Sp. z o.o., Warszawa",
           positionAndMainDuties:
-            " Nadzór oraz prowadzeni ewidencji stanów magazynowych, nadzór nad prawidłowością danych w wewnętrznym systemie ROF, współpraca z kilkudziesięcioma oddziałami firmy w zakresie, realizacji ich potrzeb (w tym codzienna współpraca z centralą firmy), nadzór nad prawidłowością danych znajdujących się w systemach obchodowych.",
+            // " Nadzór oraz prowadzenie ewidencji stanów magazynowych, nadzór nad prawidłowością danych w wewnętrznym systemie ROF, współpraca z kilkudziesięcioma oddziałami firmy w zakresie, realizacji ich potrzeb (w tym codzienna współpraca z centralą firmy), nadzór nad prawidłowością danych znajdujących się w systemach obchodowych.",
+            " Supervision and keeping records of inventory, supervision over the correctness of data in the internal ROF system, cooperation with several dozen company branches in terms of meeting their needs (including daily cooperation with the company's headquarters), supervision over the correctness of data in the inspection systems.",
         },
         {
           id: uniqid(),
           dates: "9/2019",
           companyAndCity: "CTDI Poland Sp. z o.o",
           positionAndMainDuties:
-            "Diagnoza, naprawa i dokumentowanie naprawy urządzeń zgodnie z procedurami i wytycznymi, w tym: diagnoza usterek jak również wykonywanie stosownych pomiarów urządzeń, wymiana zdiagnozowanych modułów elektronicznych, aktualizacja oprogramowania oraz wykonywanie wymaganych strojeń, wykonywanie specjalistycznych testów zgodności urządzeń, ykonywanie ekspertyz technicznych urządzeń. Praca jako serwisant urządzeń elektrycznych.",
+            // "Diagnoza, naprawa i dokumentowanie naprawy urządzeń zgodnie z procedurami i wytycznymi, w tym: diagnoza usterek jak również wykonywanie stosownych pomiarów urządzeń, wymiana zdiagnozowanych modułów elektronicznych, aktualizacja oprogramowania oraz wykonywanie wymaganych strojeń, wykonywanie specjalistycznych testów zgodności urządzeń, ykonywanie ekspertyz technicznych urządzeń. Praca jako serwisant urządzeń elektrycznych.",
+            "Diagnosis, repair and documentation of repair of devices in accordance with procedures and guidelines, including: fault diagnosis as well as performing appropriate measurements of devices, replacing diagnosed electronic modules, updating software and performing required adjustments, performing specialized device compliance tests, performing technical expertise of devices.",
         },
         {
           id: uniqid(),
           dates: "2/2018 - 8/2019",
           companyAndCity: "Cyfrowy Polsat",
-          positionAndMainDuties: "skanowanie kart i dekoderów",
+          positionAndMainDuties:
+            // "skanowanie kart i dekoderów",
+            "scanning cards and decoders.",
         },
         {
           id: uniqid(),
           dates: "1/2019 - 3/2019",
           companyAndCity: "Group AV Sp. z o.o",
           positionAndMainDuties:
-            "projektowanie systemów audiowizualnych, analiza rynku pod kątem pozyskania specjalistycznych urządzeń spełniających wymagania realizowanego projektu zgodnie ze specyfikacją techniczną.",
+            // "projektowanie systemów audiowizualnych, analiza rynku pod kątem pozyskania specjalistycznych urządzeń spełniających wymagania realizowanego projektu zgodnie ze specyfikacją techniczną.",
+            " designing audiovisual systems, market analysis in terms of obtaining specialized devices that meet the requirements of the project under implementation in accordance with the technical specification.",
         },
         {
           id: uniqid(),
           dates: "08/2015 – 11/2016",
           companyAndCity: "INF ENERG Sp. z o. o",
           positionAndMainDuties:
-            "opisywanie elementów elektrycznych, paszportyzacja sieci",
+            // "opisywanie elementów elektrycznych, paszportyzacja sieci",
+            "describing electrical components, network passporting.",
         },
         {
           id: uniqid(),
           dates: "07/2014 – 08/2014",
           companyAndCity: "Bombardier Transportation Polska Sp. z o. o.",
           positionAndMainDuties:
-            "edytowanie projektów w programie AutoCAD, pomoc w realizacji etapów prac projektowych związanych z nowymi oraz modernizowanymi wyrobami taboru kolejowego, ścisła współpraca z działami zaangażowanymi w realizację projektów taboru kolejowego, wsparcie techniczne przy realizacji umów. Były to praktyki studenckie",
+            // "edytowanie projektów w programie AutoCAD, pomoc w realizacji etapów prac projektowych związanych z nowymi oraz modernizowanymi wyrobami taboru kolejowego, ścisła współpraca z działami zaangażowanymi w realizację projektów taboru kolejowego, wsparcie techniczne przy realizacji umów. Były to praktyki studenckie",
+            "editing projects in AutoCAD, assistance in the implementation of design stages related to new and modernized rolling stock products • close cooperation with departments involved in the implementation of rolling stock projects, technical support in the implementation of contracts",
         },
       ],
     };
@@ -90,7 +138,10 @@ class Experience extends Component {
       this.state;
     return (
       <div id="Experience">
-        <h3>Doświadczenie zawodowe</h3>
+        <h3>
+          Professional experience
+          {/* Doświadczenie zawodowe */}
+        </h3>
         <hr />
         <div className="experience">
           {experience.map((exp) => {
@@ -100,7 +151,10 @@ class Experience extends Component {
                 <p>
                   <b>{exp.companyAndCity}</b>
                 </p>
-                <p>Główne obowiązki:</p>
+                <p>
+                  Main duties:
+                  {/* Główne obowiązki: */}
+                </p>
                 <p>{exp.positionAndMainDuties}</p>
               </div>
             );

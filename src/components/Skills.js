@@ -15,10 +15,11 @@ function Skills() {
     { id: uniqid(), name: "Bootstrap" },
     { id: uniqid(), name: "jQuery" },
     { id: uniqid(), name: "BEM" },
-    { id: uniqid(), name: "Testy integracyjne i jednostkowe" },
     { id: uniqid(), name: "WCAG" },
     { id: uniqid(), name: "Jest" },
     { id: uniqid(), name: "Webpack" },
+    { id: uniqid(), name: "Unit and integration tests" },
+    // { id: uniqid(), name: "Testy integracyjne i jednostkowe" },
   ];
 
   const [skills, setSkills] = useState(initialState);
@@ -38,14 +39,17 @@ function Skills() {
 
   return (
     <div id="Skills">
-      <p>Umiejętności: </p>
+      <p>
+        {/* Umiejętności:  */}
+        Skills:{" "}
+      </p>
       <ul className="skills">
         {skills.map((skill, index) => {
           return <Skill key={skill.id} skill={skill} />;
         })}
       </ul>
       <button onClick={handleAdd} className="adding-skills">
-        Dodaj
+        Add
       </button>
       <div className="add-skills">
         <div>
@@ -57,7 +61,7 @@ function Skills() {
             name="skill"
           />
         </div>
-        <button onClick={handleClick}>Dodaj</button>
+        <button onClick={handleClick}>Add</button>
       </div>
     </div>
   );

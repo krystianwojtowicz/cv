@@ -13,8 +13,10 @@ class Education extends Component {
         {
           id: uniqid(),
           dates: "2011-2016",
-          UniversityAndCity: "Politechnika Warszawska",
-          field: "elektrotechnika",
+          UniversityAndCity: "Warsaw University of Technology",
+          // "Politechnika Warszawska",
+          field: "Electrical engineering daily",
+          // "elektrotechnika",
         },
       ],
     };
@@ -56,7 +58,10 @@ class Education extends Component {
 
     return (
       <div id="Education">
-        <h3>Wykształcenie</h3>
+        <h3>
+          Education
+          {/* Wykształcenie */}
+        </h3>
         <hr />
         {education.map((educ) => {
           return (
@@ -65,7 +70,7 @@ class Education extends Component {
               <p>
                 <b>{educ.UniversityAndCity}</b>
               </p>
-              <label htmlFor="field">kierunek: </label>
+              <label htmlFor="field">field: {/* kierunek:  */}</label>
               <p style={{ display: "inline" }}>{educ.field}</p>
             </div>
           );
