@@ -151,7 +151,7 @@ class Summary extends Component {
             </a>
           </p>
           <button onClick={this.handleAdd} className="adding">
-            Dodaj
+            Add
           </button>
           <div className="add-summary">
             <input
@@ -182,7 +182,7 @@ class Summary extends Component {
               placeholder="description"
               name="description"
             />
-            <button onClick={this.handleClick}>Dodaj</button>
+            <button onClick={this.handleClick}>Add</button>
           </div>
         </div>
         <Skills></Skills>
