@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import uniqid from "uniqid";
+import Skill from "./Skill";
 
 function Skills() {
   const initialState = [
@@ -59,14 +60,6 @@ function Skills() {
         <button onClick={handleClick}>Dodaj</button>
       </div>
     </div>
-  );
-}
-
-function Skill({ skill }) {
-  return (
-    <li className="skill">
-      <span>{skill.name}</span>
-    </li>
   );
 }
 
