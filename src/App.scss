@@ -3,9 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-// *:not(h3){
-//   font-size: 20px;
-// }
+
 .wrapper {
   width: 1000px;
   margin-left: auto;
@@ -27,6 +25,7 @@
     #Personal {
       background-color: #ecebeb;
       text-align: center;
+      // height: 100%;
       button {
         background-color: white;
         padding: 10px;
@@ -243,6 +242,14 @@
   }
 }
 @media print {
+  // @page :first-child {
+  //   #Personal {
+  //     height: 100%;
+  //   }
+  // }
+  *:not(h3){
+    font-size: 20px;
+  }
   body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -265,3 +272,6 @@
   size: auto;
   margin: 0mm;
 }
+
+
+

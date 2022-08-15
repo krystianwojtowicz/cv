@@ -18,8 +18,8 @@ function Skills() {
     { id: uniqid(), name: "WCAG" },
     { id: uniqid(), name: "Jest" },
     { id: uniqid(), name: "Webpack" },
-    { id: uniqid(), name: "Unit and integration tests" },
-    // { id: uniqid(), name: "Testy integracyjne i jednostkowe" },
+    // { id: uniqid(), name: "Unit and integration tests" },
+    { id: uniqid(), name: "Testy integracyjne i jednostkowe" },
   ];
 
   const [skills, setSkills] = useState(initialState);
@@ -40,8 +40,8 @@ function Skills() {
   return (
     <div id="Skills">
       <p>
-        {/* Umiejętności:  */}
-        Skills:{" "}
+        Umiejętności:
+        {/* Skills: */}
       </p>
       <ul className="skills">
         {skills.map((skill, index) => {

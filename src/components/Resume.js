@@ -17,28 +17,28 @@ class Resume extends Component {
             <Experience></Experience>
             <Education></Education>
             <h3>
-              Foreign languages
-              {/* Języki obce */}
+              {/* Foreign languages */}
+              Języki obce
             </h3>
             <hr />
             <p style={{ marginTop: "10px" }}>
               {" "}
-              English - B2
-              {/* angielski - B2 */}
+              {/* English - B2 */}
+              angielski - B2
             </p>
             <h3 style={{ marginTop: "20px" }}>
-              Interests
-              {/* Zainteresowania */}
+              {/* Interests */}
+              Zainteresowania
             </h3>
             <hr />
             <ul style={{ margin: "20px 0 0 20px" }}>
               <li>
-                weight lifting
-                {/* ćwiczenia na siłowni */}
+                {/* weight lifting */}
+                ćwiczenia na siłowni
               </li>
               <li>
-                climbing
-                {/* wspinaczka */}
+                {/* climbing */}
+                wspinaczka
               </li>
             </ul>
           </div>

@@ -20,8 +20,8 @@ function Personal() {
       <h2>{fullName ? fullName : "Krystian Wójtowicz"}</h2>
       <img src={img} alt="" />
       <label htmlFor="phone">
-        Contact phone
-        {/* Telefon */}
+        {/* Contact phone */}
+        Telefon
       </label>
       <h2>{phone ? phone : "789194734"}</h2>
       <label htmlFor="email">E-mail</label>

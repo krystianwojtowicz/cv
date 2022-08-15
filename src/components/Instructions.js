@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // toast.configure();
 function Instructions() {
+  useEffect(() => {
+    notify();
+  }, []);
   const notify = () => {
     toast(
-      " Hover over the areas of the resume to find Edit and Add buttons. Edit your information in the form fields and submit your edits. Add your Education, Experience and Skills.",
+      " Hover over the areas of the resume to find Edit and Add buttons. Edit your information in the form fields and submit your edits. Add your Education, Experience and Skills, separate duties using comma",
       { position: toast.POSITION.TOP_CENTER }
     );
   };
   return (
     <>
-      <button onClick={notify}>Instructions</button>
+      {/* <button onClick={notify}>Instructions</button> */}
       <ToastContainer />
     </>
   );
