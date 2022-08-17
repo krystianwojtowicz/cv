@@ -259,6 +259,10 @@
   position: relative;
 }
 
+.wrapper #resume #other #Summary #summary-inner a:visited {
+  color: blue;
+}
+
 .wrapper #resume #other #Summary #summary-inner .adding {
   visibility: hidden;
   color: white;

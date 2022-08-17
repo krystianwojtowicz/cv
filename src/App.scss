@@ -217,6 +217,9 @@
         }
         #summary-inner {
           position: relative;
+          a:visited {
+            color: blue;
+          }
           .adding {
             visibility: hidden;
             color: white;
