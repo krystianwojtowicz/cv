@@ -33,12 +33,11 @@ class Summary extends Component {
         {
           id: uniqid(),
           linkToRepository:
-            "https://github.com/krystianwojtowicz/frontend-recruitment-task",
+            "https://github.com/krystianwojtowicz/shopping-cart_react",
           linkToWebsite:
-            "https://krystianwojtowicz.github.io/frontend-recruitment-task/",
-          technologies: "html, js, css-grid, WCAG",
-          description:
-            "Treść zadania jest dołączona do readme, w tym zadaniu wykorzystałem grid, jest to strona spełniająca WCAG.",
+            "https://krystianwojtowicz.github.io/shopping-cart_react/",
+          technologies: "html, js, css, react",
+          description: "Sklep w react",
           // "The task content is attached to the readme, in this webpage I used a grid, it is a WCAG compliant webpage.",
         },
         {
