@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  hr {
+    border: 1px solid black;
+  }
+  .invisible {
+    text-align: center;
+  }
+  input {
+    border: 1px solid black;
+    margin: 10px 0;
+  }
+  /* Resume */
+  #resume {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    #Personal {
+      background-color: #ecebeb;
+      text-align: center;
+      // height: 100%;
+      button {
+        background-color: white;
+        padding: 10px;
+      }
+      label {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      h2,
+      h3 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      h2:first-child {
+        padding-top: 50px;
+      }
+      img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .form {
+        visibility: hidden;
+        background-color: white;
+        /* position: absolute; */
+      }
+
+      .form.visible {
+        visibility: visible;
+      }
+      .to-edit {
+        visibility: hidden;
+      }
+    }
+    #Personal:hover .to-edit {
+      visibility: visible;
+    }
+
+    #other {
+      background-color: #f9f9f9;
+      padding: 0 30px 0 20px;
+      #Education:hover .adding {
+        visibility: visible;
+      }
+      #Education {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        .add-education {
+          visibility: hidden;
+          position: absolute;
+          bottom: 50px;
+          background-color: white;
+          input {
+            display: block;
+          }
+        }
+        .add-education.visible {
+          visibility: visible;
+        }
+        p:first-child {
+          margin-top: 10px;
+          text-align: right;
+        }
+        .adding {
+          visibility: hidden;
+          color: white;
+          background-color: black;
+          padding: 10px;
+          position: absolute;
+          bottom: 50px;
+          right: 50px;
+        }
+      }
+      #Experience:hover .adding {
+        visibility: visible;
+      }
+      #Experience {
+        margin-top: 20px;
+        position: relative;
+        // do druku
+        hr {margin-bottom: 80px;}
+        // normalnie
+        hr {margin-bottom: 20px;}
+        .add-experience {
+          visibility: hidden;
+          position: absolute;
+          bottom: 50px;
+          background-color: white;
+          input {
+            display: block;
+          }
+        }
+        .add-experience.visible {
+          visibility: visible;
+        }
+        .adding {
+          visibility: hidden;
+          color: white;
+          background-color: black;
+          padding: 10px;
+          position: absolute;
+          bottom: 50px;
+          right: 50px;
+        }
+        .experience {
+          div p:first-child {
+            text-align: right;
+            margin-top: 10px;
+          }
+          ul {
+            margin-left: 20px;
+          }
+          // div:nth-child(2) {
+          //   margin-top: 50px;
+          // }
+        }
+      }
+
+      /* Summary */
+      #Summary {
+        margin-top: 50px;
+        #Skills:hover .adding-skills {
+          visibility: visible;
+        }
+        #Skills {
+          position: relative;
+          // marginy do druku
+          margin-top: 40px;
+          margin-bottom: 40px;
+          // normalnie
+          margin-top: 20px;
+          margin-bottom: 20px;
+          .skills {
+            margin-left: 20px;
+          }
+          .adding-skills {
+            visibility: hidden;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+          }
+          .add-skills {
+            visibility: hidden;
+            position: absolute;
+            bottom: 50px;
+            background-color: white;
+          }
+          .add-skills.visible {
+            visibility: visible;
+          }
+        }
+
+        .github {
+          margin-bottom: 10px;
+        }
+
+        .examples {
+          margin-top: 10px;
+        }
+        .summary {
+          margin-top: 10px;
+          div {
+            margin-bottom: 10px;
+          }
+          p {
+            display: inline;
+          }
+        }
+
+        .add-summary {
+          visibility: hidden;
+          position: absolute;
+          bottom: 50px;
+          background-color: white;
+          input {
+            display: block;
+          }
+        }
+        .add-summary.visible {
+          visibility: visible;
+        }
+        #summary-inner {
+          position: relative;
+          a:visited {
+            color: blue;
+          }
+          .adding {
+            visibility: hidden;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+          }
+        }
+
+        #summary-inner:hover .adding {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  div.divFooter {
+    display: none;
+  }
+}
+@media print {
+  // @page :first-child {
+  //   #Personal {
+  //     height: 100%;
+  //   }
+  // }
+  .experience div:nth-child(2){
+    margin-top: 70px;
+  }
+  *:not(h3){
+    font-size: 20px;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  div.divFooter {
+    font-size: 11px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: #e5e4e5;
+  }
+  .invisible {
+    display: none;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
+}
+
+
+
