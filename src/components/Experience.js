@@ -104,7 +104,7 @@ class Experience extends Component {
       dates: "",
       companyAndCity: "",
       positionAndMainDuties: "",
-      experience: [...prevState.experience, experienceNew],
+      experience: [experienceNew, ...prevState.experience],
     }));
   };
 
@@ -135,9 +135,11 @@ class Experience extends Component {
                   {/* Główne obowiązki: */}
                 </p>
                 <ul>
-                  {exp.positionAndMainDuties.split(",").map((pos, index) => {
-                    return <li key={index}>{pos}</li>;
-                  })}
+                  {typeof exp.positionAndMainDuties === "string"
+                    ? exp.positionAndMainDuties.split(",").map((pos, index) => {
+                        return <li key={index}>{pos}</li>;
+                      })
+                    : ""}
                 </ul>
               </div>
             );
