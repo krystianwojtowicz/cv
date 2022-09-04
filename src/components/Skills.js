@@ -5,6 +5,7 @@ import Skill from "./Skill";
 function Skills() {
   const initialState = [
     { id: uniqid(), name: "SQL" },
+    { id: uniqid(), name: "Node" },
     { id: uniqid(), name: "Typescript" },
     { id: uniqid(), name: "React" },
     { id: uniqid(), name: "JavaScript" },
