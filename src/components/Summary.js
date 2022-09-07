@@ -37,6 +37,14 @@
 //           technologies: "html, js, css, react",
 //           description: "Sklep w react",
 //         },
+//         // {
+//         //   id: uniqid(),
+//         //   linkToRepository:
+//         //     "https://github.com/krystianwojtowicz/node-messages",
+//         //   linkToWebsite: "https://node3mini-message.herokuapp.com/",
+//         //   technologies: "html, js, node",
+//         //   description: "adding messages using node",
+//         // },
 //         {
 //           id: uniqid(),
 //           linkToRepository:
@@ -199,23 +207,23 @@ class Summary extends Component {
           description:
             "A webpage in which I create elements dynamically, adds tasks to a multidimensional array of projects, webpage using localStorage.",
         },
-        // {
-        //   id: uniqid(),
-        //   linkToRepository:
-        //     "https://github.com/krystianwojtowicz/shopping-cart_react",
-        //   linkToWebsite:
-        //     "https://krystianwojtowicz.github.io/shopping-cart_react/",
-        //   technologies: "html, js, css, react",
-        //   description: "Shop in react",
-        // },
         {
           id: uniqid(),
           linkToRepository:
-            "https://github.com/krystianwojtowicz/node-messages",
-          linkToWebsite: "https://node3mini-message.herokuapp.com/",
-          technologies: "html, js, node",
-          description: "adding messages using node",
+            "https://github.com/krystianwojtowicz/shopping-cart_react",
+          linkToWebsite:
+            "https://krystianwojtowicz.github.io/shopping-cart_react/",
+          technologies: "html, js, css, react",
+          description: "Shop in react",
         },
+        // {
+        //   id: uniqid(),
+        //   linkToRepository:
+        //     "https://github.com/krystianwojtowicz/node-messages",
+        //   linkToWebsite: "https://node3mini-message.herokuapp.com/",
+        //   technologies: "html, js, node",
+        //   description: "adding messages using node",
+        // },
         {
           id: uniqid(),
           linkToRepository:
