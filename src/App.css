@@ -22,6 +22,9 @@
 .wrapper input {
   border: 1px solid black;
   margin: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .wrapper #resume {
