@@ -19,6 +19,7 @@ function Skills() {
     { id: uniqid(), name: "WCAG" },
     { id: uniqid(), name: "Jest" },
     { id: uniqid(), name: "Webpack" },
+    { id: uniqid(), name: "Vue" },
     { id: uniqid(), name: "Unit and integration tests" },
     // { id: uniqid(), name: "Testy integracyjne i jednostkowe" },
   ];

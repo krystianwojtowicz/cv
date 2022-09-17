@@ -42,7 +42,7 @@ class Experience extends Component {
         //   dates: "07/2014 – 08/2014",
         //   companyAndCity: "Bombardier Transportation Polska Sp. z o. o.",
         //   positionAndMainDuties:
-        //     "edytowanie projektów w programie AutoCAD, pomoc w realizacji etapów prac projektowych związanych z nowymi oraz modernizowanymi wyrobami taboru kolejowego, ścisła współpraca z działami zaangażowanymi w realizację projektów taboru kolejowego, wsparcie techniczne przy realizacji umów. Były to praktyki studenckie",
+        //     "edytowanie projektów w programie AutoCAD, pomoc w realizacji etapów prac projektowych związanych z nowymi oraz modernizowanymi wyrobami taboru kolejowego, ścisła współpraca z działami zaangażowanymi w realizację projektów taboru kolejowego, wsparcie techniczne przy realizacji umów. To były praktyki studenckie",
         // },
         {
           id: uniqid(),

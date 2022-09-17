@@ -11,6 +11,10 @@
   /* Resume */
 }
 
+.wrapper button {
+  padding: 5px;
+}
+
 .wrapper hr {
   border: 1px solid black;
 }
@@ -21,6 +25,7 @@
 
 .wrapper input {
   border: 1px solid black;
+  border-radius: 5px;
   margin: 10px 0;
   margin-left: auto;
   margin-right: auto;
@@ -40,6 +45,7 @@
 .wrapper #resume #Personal button {
   background-color: white;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .wrapper #resume #Personal label {
@@ -68,8 +74,9 @@
 }
 
 .wrapper #resume #Personal .form {
+  padding: 10px;
   visibility: hidden;
-  background-color: white;
+  background-color: #5c9e5c;
   /* position: absolute; */
 }
 
@@ -105,7 +112,8 @@
   visibility: hidden;
   position: absolute;
   bottom: 50px;
-  background-color: white;
+  background-color: #5c9e5c;
+  padding: 5px;
 }
 
 .wrapper #resume #other #Education .add-education input {
@@ -152,7 +160,8 @@
   visibility: hidden;
   position: absolute;
   bottom: 50px;
-  background-color: white;
+  padding: 5px;
+  background-color: #5c9e5c;
 }
 
 .wrapper #resume #other #Experience .add-experience input {
@@ -216,7 +225,8 @@
   visibility: hidden;
   position: absolute;
   bottom: 50px;
-  background-color: white;
+  padding: 5px;
+  background-color: #5c9e5c;
 }
 
 .wrapper #resume #other #Summary #Skills .add-skills.visible {
@@ -247,7 +257,8 @@
   visibility: hidden;
   position: absolute;
   bottom: 50px;
-  background-color: white;
+  background-color: #5c9e5c;
+  padding: 5px;
 }
 
 .wrapper #resume #other #Summary .add-summary input {
@@ -287,8 +298,9 @@
 }
 
 @media print {
-  .experience div:nth-child(2) {
-    margin-top: 90px;
+  .experience div:first-child ul li:last-child {
+    margin-top: 80px;
+    padding-top: 10px;
   }
   *:not(h3) {
     font-size: 20px;

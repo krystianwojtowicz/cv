@@ -8,6 +8,9 @@
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  button {
+    padding: 5px;
+  }
   hr {
     border: 1px solid black;
   }
@@ -16,6 +19,7 @@
   }
   input {
     border: 1px solid black;
+    border-radius: 5px;
     margin: 10px 0;
     margin-left: auto;
     margin-right: auto;
@@ -32,6 +36,7 @@
       button {
         background-color: white;
         padding: 10px;
+        border-radius: 5px;
       }
       label {
         display: block;
@@ -55,8 +60,9 @@
         margin-right: auto;
       }
       .form {
+        padding: 10px;
         visibility: hidden;
-        background-color: white;
+        background-color: rgb(92, 158, 92);
         /* position: absolute; */
       }
 
@@ -85,7 +91,8 @@
           visibility: hidden;
           position: absolute;
           bottom: 50px;
-          background-color: white;
+          background-color: rgb(92, 158, 92);
+          padding: 5px;
           input {
             display: block;
           }
@@ -121,7 +128,8 @@
           visibility: hidden;
           position: absolute;
           bottom: 50px;
-          background-color: white;
+          padding: 5px;
+          background-color: rgb(92, 158, 92);
           input {
             display: block;
           }
@@ -182,7 +190,8 @@
             visibility: hidden;
             position: absolute;
             bottom: 50px;
-            background-color: white;
+            padding: 5px;
+            background-color: rgb(92, 158, 92);
           }
           .add-skills.visible {
             visibility: visible;
@@ -210,7 +219,8 @@
           visibility: hidden;
           position: absolute;
           bottom: 50px;
-          background-color: white;
+          background-color: rgb(92, 158, 92);
+          padding: 5px;
           input {
             display: block;
           }
@@ -253,9 +263,16 @@
   //     height: 100%;
   //   }
   // }
-  .experience div:nth-child(2){
-    margin-top: 90px;
+  .experience div:first-child{
+    ul li:last-child {
+      margin-top: 80px;
+      padding-top: 10px;
+      }
   }
+  // .experience div:nth-child(2){
+  //   margin-top: 80px;
+  //   padding-top: 10px;
+  // }
   *:not(h3){
     font-size: 20px;
   }
@@ -281,6 +298,10 @@
   size: auto;
   margin: 0mm;
 }
+
+// @page :second {
+//   margin-top: 5mm;
+// }
 
 
 
