@@ -196,7 +196,7 @@ class Summary extends Component {
           linkToRepository: "https://github.com/krystianwojtowicz/blog-api",
           linkToWebsite: "https://blog-api-krystian.herokuapp.com/",
           technologies: "CSS, React, Express, MongoDB, Node.js",
-          description: "MERN, let create, edit and delete blog posts",
+          description: "MERN, it allows create, edit and delete blog posts",
         },
         {
           id: uniqid(),
