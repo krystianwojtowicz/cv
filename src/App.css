@@ -42,6 +42,10 @@
   text-align: center;
 }
 
+.wrapper #resume #Personal a:visited {
+  color: blue;
+}
+
 .wrapper #resume #Personal button {
   background-color: white;
   padding: 10px;
@@ -298,9 +302,8 @@
 }
 
 @media print {
-  .experience div:first-child ul li:last-child {
-    margin-top: 80px;
-    padding-top: 10px;
+  #Experience {
+    padding-top: 200px;
   }
   *:not(h3) {
     font-size: 20px;

@@ -22,6 +22,7 @@ function Skills() {
     { id: uniqid(), name: "Vue" },
     { id: uniqid(), name: "Unit and integration tests" },
     // { id: uniqid(), name: "Testy integracyjne i jednostkowe" },
+    // { id: uniqid(), name: "Microsoft Excel" },
   ];
 
   const [skills, setSkills] = useState(initialState);

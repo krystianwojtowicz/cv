@@ -33,6 +33,9 @@
       background-color: #ecebeb;
       text-align: center;
       // height: 100%;
+      a:visited {
+        color: blue;
+      }
       button {
         background-color: white;
         padding: 10px;
@@ -263,11 +266,14 @@
   //     height: 100%;
   //   }
   // }
-  .experience div:first-child{
-    ul li:last-child {
-      margin-top: 80px;
-      padding-top: 10px;
-      }
+  // .experience div:first-child{
+  //   ul li:last-child {
+  //     margin-top: 80px;
+  //     padding-top: 10px;
+  //     }
+  // }
+  #Experience {
+    padding-top: 200px;
   }
   // .experience div:nth-child(2){
   //   margin-top: 80px;

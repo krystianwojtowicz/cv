@@ -5,6 +5,7 @@ function Personal() {
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [linkedin, setLinkedin] = useState("");
 
   const onSubmitTask = (e) => {
     e.preventDefault();
@@ -26,6 +27,18 @@ function Personal() {
       <h2>{phone ? phone : "789194734"}</h2>
       <label htmlFor="email">E-mail</label>
       <h4>{email ? email : "krystian1wojtowicz@gmail.com"}</h4>
+      <label htmlFor="linkedin">Linkedin</label>
+      <a
+        href={
+          linkedin
+            ? linkedin
+            : "https://www.linkedin.com/in/krystian-wojtowicz/"
+        }
+      >
+        {linkedin
+          ? linkedin
+          : "https://www.linkedin.com/in/krystian-wojtowicz/"}
+      </a>
       <button onClick={handleClick} className="to-edit">
         edit
       </button>
@@ -57,6 +70,15 @@ function Personal() {
             type="text"
             placeholder="email"
             name="email"
+          />
+          <input
+            onChange={(e) => {
+              setLinkedin(e.target.value);
+            }}
+            value={linkedin}
+            type="text"
+            placeholder="linkedin"
+            name="linkedin"
           />
         </div>
         <button type="submit">submit</button>

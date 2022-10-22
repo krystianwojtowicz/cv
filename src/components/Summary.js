@@ -14,9 +14,17 @@
 //       summary: [
 //         {
 //           id: uniqid(),
+//           linkToRepository: "https://github.com/krystianwojtowicz/blog-api",
+//           linkToWebsite: "https://blog-api-krystian.herokuapp.com/",
+//           technologies: "CSS, React, Express, MongoDB, Node.js",
+//           description:
+//             "MERN, pozwala na tworzenie, edytowanie i usuwanie postów",
+//         },
+//         {
+//           id: uniqid(),
 //           linkToRepository: "https://github.com/krystianwojtowicz/cv",
 //           linkToWebsite: "https://krystianwojtowicz.github.io/cv/",
-//           technologies: "react, html, js, css",
+//           technologies: "React, HTML, JS, CSS",
 //           description:
 //             "Strona, w której tworzę elementy dynamicznie, dzięki niej mogę szybko edytować CV",
 //         },
@@ -24,7 +32,7 @@
 //           id: uniqid(),
 //           linkToRepository: "https://github.com/krystianwojtowicz/todo",
 //           linkToWebsite: "https://krystianwojtowicz.github.io/todo/",
-//           technologies: "html, js, css",
+//           technologies: "HTML, JS, CSS",
 //           description:
 //             "Strona, w której tworzę elementy dynamicznie, dokłada zadania to wielowymiarowej tablicy projektów, strona z wykorzystaniem localStorage",
 //         },
@@ -34,24 +42,16 @@
 //             "https://github.com/krystianwojtowicz/shopping-cart_react",
 //           linkToWebsite:
 //             "https://krystianwojtowicz.github.io/shopping-cart_react/",
-//           technologies: "html, js, css, react",
+//           technologies: "HTML, JS, CSS, React",
 //           description: "Sklep w react",
 //         },
-//         // {
-//         //   id: uniqid(),
-//         //   linkToRepository:
-//         //     "https://github.com/krystianwojtowicz/node-messages",
-//         //   linkToWebsite: "https://node3mini-message.herokuapp.com/",
-//         //   technologies: "html, js, node",
-//         //   description: "adding messages using node",
-//         // },
 //         {
 //           id: uniqid(),
 //           linkToRepository:
 //             "https://github.com/krystianwojtowicz/website-with-bem-and-scss",
 //           linkToWebsite:
 //             "https://krystianwojtowicz.github.io/website-with-bem-and-scss/",
-//           technologies: "html, js, css, php",
+//           technologies: "HTML, JS, CSS, PHP",
 //           description: "Strona z wykorzystaniem BEM, SCSS i PHP",
 //         },
 //       ],
@@ -193,9 +193,16 @@ class Summary extends Component {
       summary: [
         {
           id: uniqid(),
+          linkToRepository: "https://github.com/krystianwojtowicz/blog-api",
+          linkToWebsite: "https://blog-api-krystian.herokuapp.com/",
+          technologies: "CSS, React, Express, MongoDB, Node.js",
+          description: "MERN, let create, edit and delete blog posts",
+        },
+        {
+          id: uniqid(),
           linkToRepository: "https://github.com/krystianwojtowicz/cv",
           linkToWebsite: "https://krystianwojtowicz.github.io/cv/",
-          technologies: "react, html, js, css",
+          technologies: "React, HTML, JS, CSS",
           description:
             "A webpage, where I create elements dynamically, thanks to which I can quickly edit my CV.",
         },
@@ -203,7 +210,7 @@ class Summary extends Component {
           id: uniqid(),
           linkToRepository: "https://github.com/krystianwojtowicz/todo",
           linkToWebsite: "https://krystianwojtowicz.github.io/todo/",
-          technologies: "html, js, css",
+          technologies: " HTML, JS, CSS",
           description:
             "A webpage in which I create elements dynamically, adds tasks to a multidimensional array of projects, webpage using localStorage.",
         },
@@ -213,24 +220,16 @@ class Summary extends Component {
             "https://github.com/krystianwojtowicz/shopping-cart_react",
           linkToWebsite:
             "https://krystianwojtowicz.github.io/shopping-cart_react/",
-          technologies: "html, js, css, react",
+          technologies: " HTML, JS, CSS, React",
           description: "Shop in react",
         },
-        // {
-        //   id: uniqid(),
-        //   linkToRepository:
-        //     "https://github.com/krystianwojtowicz/node-messages",
-        //   linkToWebsite: "https://node3mini-message.herokuapp.com/",
-        //   technologies: "html, js, node",
-        //   description: "adding messages using node",
-        // },
         {
           id: uniqid(),
           linkToRepository:
             "https://github.com/krystianwojtowicz/website-with-bem-and-scss",
           linkToWebsite:
             "https://krystianwojtowicz.github.io/website-with-bem-and-scss/",
-          technologies: "html, js, css, php",
+          technologies: " HTML, JS, CSS, PHP",
           description: "A webpage with the use of BEM, SCSS and PHP",
         },
       ],
