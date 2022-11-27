@@ -15,7 +15,7 @@
 //         {
 //           id: uniqid(),
 //           linkToRepository: "https://github.com/krystianwojtowicz/blog-api",
-//           linkToWebsite: "https://blog-api-krystian.herokuapp.com/",
+//           linkToWebsite: "https://blog-api-nwqo.onrender.com/",
 //           technologies: "CSS, React, Express, MongoDB, Node.js",
 //           description:
 //             "MERN, pozwala na tworzenie, edytowanie i usuwanie postów",
@@ -194,7 +194,7 @@ class Summary extends Component {
         {
           id: uniqid(),
           linkToRepository: "https://github.com/krystianwojtowicz/blog-api",
-          linkToWebsite: "https://blog-api-krystian.herokuapp.com/",
+          linkToWebsite: "https://blog-api-nwqo.onrender.com/",
           technologies: "CSS, React, Express, MongoDB, Node.js",
           description: "MERN, it allows create, edit and delete blog posts",
         },
