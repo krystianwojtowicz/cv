@@ -29,6 +29,7 @@ function Personal() {
       <h4>{email ? email : "krystian1wojtowicz@gmail.com"}</h4>
       <label htmlFor="linkedin">Linkedin</label>
       <a
+        className="linkedin"
         href={
           linkedin
             ? linkedin

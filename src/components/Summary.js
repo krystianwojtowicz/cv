@@ -22,6 +22,16 @@
 //         },
 //         {
 //           id: uniqid(),
+//           linkToRepository:
+//             "https://github.com/krystianwojtowicz/typescript-fetch",
+//           linkToWebsite:
+//             "https://krystianwojtowicz.github.io/typescript-fetch/",
+//           technologies: "CSS, React, TypeScript",
+//           description:
+//             "Strona z pobieraniem danych z API, treść zadania można zobaczyć na githubie",
+//         },
+//         {
+//           id: uniqid(),
 //           linkToRepository: "https://github.com/krystianwojtowicz/cv",
 //           linkToWebsite: "https://krystianwojtowicz.github.io/cv/",
 //           technologies: "React, HTML, JS, CSS",
@@ -197,6 +207,16 @@ class Summary extends Component {
           linkToWebsite: "https://blog-api-nwqo.onrender.com/",
           technologies: "CSS, React, Express, MongoDB, Node.js",
           description: "MERN, it allows create, edit and delete blog posts",
+        },
+        {
+          id: uniqid(),
+          linkToRepository:
+            "https://github.com/krystianwojtowicz/typescript-fetch",
+          linkToWebsite:
+            "https://krystianwojtowicz.github.io/typescript-fetch/",
+          technologies: "CSS, React, TypeScript",
+          description:
+            "Page with fetching data from the API, the content of the task can be seen on github",
         },
         {
           id: uniqid(),

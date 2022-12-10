@@ -302,11 +302,11 @@
 }
 
 @media print {
-  #Experience {
-    padding-top: 200px;
-  }
   *:not(h3) {
     font-size: 20px;
+  }
+  .linkedin {
+    font-size: 16px;
   }
   body {
     -webkit-print-color-adjust: exact;
