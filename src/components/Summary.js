@@ -61,8 +61,8 @@
 //             "https://github.com/krystianwojtowicz/website-with-bem-and-scss",
 //           linkToWebsite:
 //             "https://krystianwojtowicz.github.io/website-with-bem-and-scss/",
-//           technologies: "HTML, JS, CSS, PHP",
-//           description: "Strona z wykorzystaniem BEM, SCSS i PHP",
+//           technologies: "HTML, JS, CSS",
+//           description: "Strona z wykorzystaniem BEM, SCSS",
 //         },
 //       ],
 //     };
@@ -249,8 +249,8 @@ class Summary extends Component {
             "https://github.com/krystianwojtowicz/website-with-bem-and-scss",
           linkToWebsite:
             "https://krystianwojtowicz.github.io/website-with-bem-and-scss/",
-          technologies: " HTML, JS, CSS, PHP",
-          description: "A webpage with the use of BEM, SCSS and PHP",
+          technologies: " HTML, JS, CSS",
+          description: "A webpage with the use of BEM, SCSS",
         },
       ],
     };
